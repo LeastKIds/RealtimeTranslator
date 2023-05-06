@@ -1,0 +1,12 @@
+
+version: "3"
+
+services:
+  tp:
+    build:
+      context: ./Docker
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+    container_name: translate_python
+    tty: true
